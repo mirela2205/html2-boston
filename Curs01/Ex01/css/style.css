@@ -38,6 +38,10 @@ body > h2 {
   display: none;
 }
 
+body > h3 {
+  display: none;
+}
+
 @media (min-width: 500px) and (max-width: 1000px) {
   body > h2 {
     display: block;
@@ -47,6 +51,14 @@ body > h2 {
 @media (max-width: 576px) {
   .box-2 {
     display: none;
+  }
+
+  .box-1 {
+    display: none;
+  }
+
+  body {
+    padding: 15px;
   }
 }
 
@@ -70,6 +82,11 @@ body > h2 {
   .box-4 {
     display: none;
   }
+
+  .box-2 {
+    border: 1px solid yellow;
+    color: white;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -87,3 +104,30 @@ body > h2 {
     color: red;
   }
 }
+
+@media (min-width: 577px) {
+  body > h3 {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  body > h3 {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  body > h3 {
+    color: red;
+  }
+}
+
+@media (min-width: 992px) {
+  .box-1 {
+    display: none;
+  }
+}
+
+/* opacity: 0;
+visibility: hidden; */
