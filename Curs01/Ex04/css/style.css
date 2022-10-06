@@ -1,13 +1,1 @@
-body {
-  background-color: red;
-}
-
-.home-catalog-preview {
-  margin: auto;
-}
-
-.home-catalog-preview .product-tiles {
-  color: red;
-}
-
-/*# sourceMappingURL=style.css.map */
+body{background-color:red}.home-catalog-preview{margin:auto}.product-tiles{color:red}/*# sourceMappingURL=style.css.map */
