@@ -1,0 +1,73 @@
+@mixin square-bg($color: blue) {
+  background-color: $color;
+}
+
+@mixin circle-bg($color: red) {
+  background-color: $color;
+}
+
+@mixin square() {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  background-color: turquoise;
+}
+
+.square {
+  @include square();
+}
+
+.squares {
+  width: 80%;
+  border: 1px solid black;
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.square-magenta {
+  @include square-bg(magenta);
+  @extend .square;
+}
+
+.square-peru {
+  @include square-bg(peru);
+  @extend .square;
+}
+
+.square-purple {
+  @include square-bg(purple);
+  @extend .square;
+}
+
+.circles {
+  margin: auto;
+  width: 80%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: brown;
+  border: 1px solid black;
+}
+
+.circle-red {
+  @include circle-bg(red);
+  @extend .circle;
+}
+
+.circle-green {
+  @include circle-bg(green);
+  @extend .circle;
+}
+
+.circle-blue {
+  @include circle-bg(blue);
+  @extend .circle;
+}
