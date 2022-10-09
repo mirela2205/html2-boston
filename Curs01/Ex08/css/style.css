@@ -1,10 +1,3 @@
-.square, .square-purple, .square-peru, .square-magenta {
-  width: 200px;
-  height: 200px;
-  border: 1px solid black;
-  background-color: turquoise;
-}
-
 .squares {
   width: 80%;
   border: 1px solid black;
@@ -12,6 +5,13 @@
   margin: auto;
   display: flex;
   justify-content: space-between;
+}
+
+.square, .square-purple, .square-peru, .square-magenta {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  background-color: turquoise;
 }
 
 .square-magenta {

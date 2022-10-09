@@ -49,16 +49,18 @@ a {
   }
 }
 
-ol a {
-  &:hover {
-    color: $brand-main;
-  }
+ol {
+  a {
+    &:hover {
+      color: $brand-main;
+    }
 
-  &:active {
-    color: $brand-level;
-  }
+    &:active {
+      color: $brand-level;
+    }
 
-  &:visited {
-    color: $brand-neutral;
+    &:visited {
+      color: $brand-neutral;
+    }
   }
 }

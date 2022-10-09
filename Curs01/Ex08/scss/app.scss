@@ -13,10 +13,6 @@
   background-color: turquoise;
 }
 
-.square {
-  @include square();
-}
-
 .squares {
   width: 80%;
   border: 1px solid black;
@@ -24,6 +20,10 @@
   margin: auto;
   display: flex;
   justify-content: space-between;
+}
+
+.square {
+  @include square();
 }
 
 .square-magenta {
