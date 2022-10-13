@@ -16,4 +16,12 @@ $data: (
   .btn-#{$suffix} {
     color: $color;
   }
+
+  .btn-bg-#{$suffix} {
+    background-color: $color;
+  }
+
+  .text-#{$suffix} {
+    color: $color;
+  }
 }
