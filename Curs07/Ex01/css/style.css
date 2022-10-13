@@ -1,0 +1,64 @@
+@keyframes bar01 {
+  0% {
+    width: 50px;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.bar-01 {
+  animation: bar01 10s ease-in forwards;
+}
+
+@keyframes bar04 {
+  0% {
+    background-color: red;
+    width: 100%;
+  }
+
+  33% {
+    background-color: blue;
+    width: 50%;
+  }
+
+  66% {
+    background-color: black;
+  }
+
+  100% {
+    width: 150px;
+    background-color: orange;
+  }
+}
+
+.bar-04 {
+  animation: bar04 5s ease-out;
+}
+
+@keyframes bar05 {
+  0% {
+    background-color: green;
+    width: 100%;
+  }
+
+  50% {
+    width: 500px;
+    background-color: red;
+  }
+
+  70% {
+    width: 75%;
+    background-color: green;
+  }
+
+  100% {
+    width: 500px;
+    background-color: orange;
+  }
+}
+
+.bar-05 {
+  animation: bar05 8s linear;
+}

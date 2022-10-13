@@ -22,4 +22,8 @@
   color: gray;
 }
 
+.btn-inverted .btn-text-gray {
+  padding: 30px;
+}
+
 /*# sourceMappingURL=style.css.map */
