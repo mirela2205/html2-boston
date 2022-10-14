@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: blue;
+  display: block;
+}
+
+@keyframes move {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  20% {
+    transform: translateY(calc(100vh - 150px));
+  }
+
+  40% {
+    transform: translate(calc(100vw - 150px), calc(100vh - 150px));
+  }
+
+  60% {
+    transform: translateX(calc(100vw - 150px));
+  }
+
+  80% {
+    transform: translateY(calc(100vh - 150px));
+  }
+}
+
+.box {
+  animation: move 10s ease-out;
+}

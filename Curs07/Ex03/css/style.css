@@ -8,19 +8,30 @@ body {
 }
 
 @keyframes blink {
-  to {
+  from {
     opacity: 1;
   }
 
-  from {
+  to {
     opacity: 0;
+  }
+}
+
+@keyframes colors {
+  from {
+    color: red;
+  }
+
+  to {
+    color: blue;
   }
 }
 
 .loader {
   text-transform: uppercase;
   font-family: sans-serif;
-  animation: blink 1s linear infinite alternate forwards;
+  /* animation: blink 1s linear infinite alternate forwards; */
+  animation: colors 2s linear infinite alternate forwards;
 }
 
 @keyframes bounce {
@@ -30,6 +41,16 @@ body {
 
   to {
     transform: translateY(-16px);
+  }
+}
+
+@keyframes horizon {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(20px);
   }
 }
 
@@ -44,7 +65,8 @@ body {
   display: block;
   background-color: brown;
   border-radius: 50%;
-  animation: bounce 0.8s linear infinite alternate forwards;
+  /* animation: bounce 0.8s linear infinite alternate forwards; */
+  animation: horizon 0.8s linear infinite alternate forwards;
 }
 
 .loader-dots .box:nth-child(2) {
