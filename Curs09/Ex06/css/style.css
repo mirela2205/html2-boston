@@ -62,13 +62,18 @@
   align-items: flex-end;
 }
 
-.flex-container-03 .flex-item:nth-child(2) {
+.flex-container-03 :nth-child(2) {
   flex-grow: 1;
 }
 
-.flex-container-03 .flex-item:nth-child(4) {
+.flex-container-03 :nth-child(4) {
   flex-grow: 2;
 }
+
+/*
+sau
+.flex-container-03 div:nth-last-of-type(2) {} */
+/* sau fara div */
 
 .flex-container-04 {
   flex-direction: row-reverse;
@@ -96,6 +101,9 @@
   flex-direction: row-reverse;
 }
 
-.flex-container-06 .flex-item:nth-child(4) {
+.flex-container-06 :nth-child(4) {
   flex-grow: 1;
 }
+
+/* sau
+.flex-container-06 :nth-last-child(2) */

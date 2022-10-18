@@ -75,9 +75,14 @@ body {
   align-items: flex-start;
 }
 
-.flex-container-03 .flex-item:nth-of-type(4) {
+.flex-container-03 :nth-of-type(4) {
   align-self: stretch;
+  width: auto;
+  max-width: unset;
 }
+
+/* sau
+.flex-container-03 div:nth-child(4) */
 
 .flex-container-04 {
   flex-direction: column;
@@ -102,8 +107,13 @@ body {
 .flex-container-06 {
   flex-direction: column;
   justify-content: flex-end;
+  align-items: flex-start;
 }
 
 .flex-container-06 .flex-item:nth-of-type(3) {
   align-self: flex-end;
 }
+
+/* sau
+.flex-container-06  > :first-child + div + div {
+} */
