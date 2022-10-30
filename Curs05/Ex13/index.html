@@ -44,7 +44,7 @@
         <!-- recipe header -->
 
         <fieldset class="row">
-          <div class="col-12 col-lg-6 d-flex flex-column gap-2">
+          <div class="col-12 col-lg-6 d-flex flex-column gap-2 mb-2">
             <div class="input-group">
               <label
                 for="recipe-name"
@@ -80,7 +80,24 @@
               ></textarea>
             </div>
 
-            <!-- insert code (descriere scurta) -->
+            <div class="input-group">
+              <label
+                for="recipe-short-description"
+                class="input-group-text"
+              >Descriere scurta *</label>
+
+              <textarea
+                type="text"
+                class="form-control"
+                name="recipe-short-description"
+                id="recipe-short-description"
+                cols="16"
+                rows="5"
+                placeholder="Descriere scurta *"
+                required
+              >
+              </textarea>
+            </div>
           </div>
 
           <div class="col-12 col-lg-6 mt-2 mt-lg-0 d-flex flex-column gap-2">
@@ -143,7 +160,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-lg-6 d-flex flex-column gap-2">
+          <div class="col-12 col-lg-6 d-flex flex-column gap-2 mb-2">
             <div class="input-group">
               <label
                 for="recipe-author-name"
@@ -158,6 +175,36 @@
                 name="recipe-author-name"
                 id="recipe-author-name"
                 placeholder="Numele autorului *"
+                required
+              >
+            </div>
+
+            <div class="input-group">
+              <label
+                for="author-first-name"
+                class="input-group-text"
+              >Prenumele autorului *</label>
+              <input
+                type="text"
+                class="form-control"
+                name="author-first-name"
+                id="author-first-name"
+                placeholder="Prenumele autorului *"
+                required
+              >
+            </div>
+
+            <div class="input-group">
+              <label
+                for="author-email"
+                class="input-group-text"
+              >Email *</label>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Email *"
+                name="author-email"
+                id="author-email"
                 required
               >
             </div>
@@ -218,6 +265,23 @@
 
           <div class="col-12 col-lg-6 mt-2 mt-lg-0">
             <h3>Lista ingrediente</h3>
+
+            <ul>
+              <li class="mb-2">100g ulei
+                <span class="bg-primary text-white p-1">Editeaza</span>
+                <span class="bg-danger text-white p-1">Sterge</span>
+              </li>
+
+              <li class="mb-2">200g ceapa
+                <span class="bg-primary text-white p-1">Editeaza</span>
+                <span class="bg-danger text-white p-1">Sterge</span>
+              </li>
+
+              <li>200g ardei gras
+                <span class="bg-primary text-white p-1">Editeaza</span>
+                <span class="bg-danger text-white p-1">Sterge</span>
+              </li>
+            </ul>
           </div>
         </fieldset>
       </section>
@@ -230,15 +294,71 @@
         </header>
 
         <fieldset class="row">
-          <div class="col-12 col-lg-6">
-            insert code here
-            codati ambele butoane type="button"
+          <div class="col-12 col-lg-6 d-flex flex-column gap-2">
+            <div class="input-group">
+              <label
+                for="title-step"
+                class="input-group-text"
+              >Titlu pas *</label>
+              <input
+                type="text"
+                class="form-control"
+                name="title-step"
+                id="title-step"
+                placeholder="Titlu pas *"
+              >
+            </div>
+
+            <div class="input-group">
+              <label
+                for="subtitle-step"
+                class="input-group-text"
+              >Subtitlu pas *</label>
+              <input
+                type="text"
+                class="form-control"
+                name="subtitle-step"
+                id="subtitle-step"
+                placeholder="Subtitlu pas *"
+              >
+            </div>
+
+            <div class="input-group">
+              <label
+                for="description-step"
+                class="input-group-text"
+              >Descriere pas *</label>
+              <textarea
+                type="text"
+                name="description-step"
+                id="description-step"
+                cols="16"
+                rows="10"
+                class="form-control"
+                placeholder="Descriere pas *"
+                required
+              ></textarea>
+            </div>
+
+            <div class="d-flex flex-row gap-2 justify-content-end">
+              <button
+                type="button"
+                class="btn btn-outline-danger"
+                title="Reseteaza"
+              >Reseteaza</button>
+
+              <button
+                type="button"
+                class="btn btn-primary"
+                title="Adauga pas"
+              >Adauga pas</button>
+            </div>
           </div>
         </fieldset>
       </section>
     </main>
 
-    <footer class="container mt-5">
+    <footer class="container mt-5 pb-5">
       <div class="row">
         <div class="col text-center">
           <button
@@ -246,7 +366,7 @@
             type="reset"
             title="Reseteaza"
           >
-            Reseteaza
+            Reseteaza tot
           </button>
 
           <button
