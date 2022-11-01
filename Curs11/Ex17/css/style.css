@@ -17,22 +17,21 @@
   grid-row: 1 / 2;
   background-color: lightblue;
 }
-
+/* grid-container :first-child */
 .grid-item-2 {
   background-color: lightblue;
   grid-column: 8 / 10;
-  grid-auto-columns: 150px;
 }
-
+/* grid-container :nth-child(2) */
 .grid-item-3 {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
   background-color: lightcoral;
 }
-
+/* grid-container :nth-last-child(2) */
 .grid-item-4 {
   grid-column: 2 / 3;
   grid-row: 8 / 10;
   background-color: lightcoral;
-  grid-auto-rows: 150px;
 }
+/* grid-container :last-child */
